@@ -246,7 +246,7 @@ def predict_disease_from_symptom(symptom_list):
     print(df_test.head()) 
     # Load pre-trained model
     clf = load(str("model/random_forest.joblib"))
-    result = clf.predict(df_test)
+    result = clf.predict(df_test)   
 
     disease_details = getDiseaseInfo(result[0])
     
